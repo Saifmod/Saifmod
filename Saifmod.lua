@@ -97,13 +97,115 @@ Players.PlayerRemoving:Connect(function(plr)
 end)
   	end    
 })
+Tab:AddButton({
+	Name = "كشف اماكن ³",
+	Callback = function()
+      		print("button pressed")local Players = game:GetService("Players")
+
+local RunService = game:GetService("RunService")
+
+
+
+local function createBox()
+
+    local box = Instance.new("BoxHandleAdornment")
+
+    box.Size = Vector3.new(4, 7, 2)
+
+    box.Color3 = Color3.new(1, 0, 0)
+
+    box.Transparency = 0.5
+
+    box.ZIndex = 5
+
+    return box
+
+end
+
+
+
+local function updateEsp(player, box)
+
+    local character = player.Character
+
+    if character and character:FindFirstChild("HumanoidRootPart") then
+
+        box.Visible = true
+
+        box.Adornee = character.HumanoidRootPart
+
+        box.Parent = character.HumanoidRootPart
+
+    else
+
+        box.Visible = false
+
+        box.Adornee = nil
+
+        box.Parent = nil
+
+    end
+
+end
+
+
+
+local function onPlayerAdded(player)
+
+    local box = createBox()
+
+    updateEsp(player, box)
+
+    player.CharacterAdded:Connect(function()
+
+        updateEsp(player, box)
+
+    end)
+
+    player.CharacterRemoving:Connect(function()
+
+        updateEsp(player, box)
+
+    end)
+
+end
+
+
+
+for _, player in ipairs(Players:GetPlayers()) do
+
+    onPlayerAdded(player)
+
+end
+
+
+
+Players.PlayerAdded:Connect(function(player)
+
+    onPlayerAdded(player)
+
+end)
+
+
+
+RunService.RenderStepped:Connect(function()
+
+    for _, player in ipairs(Players:GetPlayers()) do
+
+        updateEsp(player)
+
+    end
+
+end)
+})
+
 local Tab = Window:MakeTab({
 	Name = "war tycoon",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 Tab:AddButton({
-	Name = "Button!",
+	Name = "war tycoon ¹",
 	Callback = function()
       		print("button pressed")loadstring(game:HttpGet("https://raw.githubusercontent.com/Cazzanos/The-basement/main/Basement%20hub", true))()
   	end    
@@ -114,43 +216,78 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 Tab:AddButton({
-	Name = "ايم بوت ¹",
+	Name = "ايم بوت",
 	Callback = function()
-      		print("button pressed")loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-HUB/HUB/main/Aimbot"))()
+      		print("button pressed")loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Aimbot-All-executors-16106"))()
   	end    
 })
 Tab:AddButton({
 	Name = "ايم بوت ²",
 	Callback = function()
-      		print("button pressed")loadstring(game:HttpGet("https://pastebin.com/raw/NVFVQHRm"))()
+      		print("button pressed")loadstring(game:HttpGet("https://raw.githubusercontent.com/HomeMadeScripts/Camlock-aimlock/main/obf_Wxr6QgzF76G1y2Ch77KN4Zt5Nz0A6GIl61gitv3mRR2t3V103al5d0g26s4KY04r.lua.txt"))()
   	end    
 })
 Tab:AddButton({
 	Name = "ايم بوت ³",
 	Callback = function()
-      		print("button pressed")loadstring(game:HttpGet("https://pastebin.com/raw/v85uKg67", true))()
+      		print("button pressed")loadstring(game:HttpGet("https://raw.githubusercontent.com/ds5x/Scripts-Xhub/refs/heads/main/IMBOT-XHUB"))()
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "سكربت اخرى",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "طيران",
+	Callback = function()
+      		print("button pressed")--ARCEUS X FLY V2 SCRIPT
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+})
+Tab:AddButton({
+	Name = " القفل",
+	Callback = function()
+      		print("button pressed")loadstring(game:HttpGet('https://raw.githubusercontent.com/Unknownproootest/Permanent-Shift-Lock-Beta/gui/PermShiftlockGui'))()
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "بلوكس فروت",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "بلوكس فروت ¹",
+	Callback = function()
+      		print("button pressed")loadstring(game:HttpGet('https://raw.githubusercontent.com/Script
+-Blox/Script/main/PayBack.lua'))()
   	end    
 })
 Tab:AddButton({
-	Name = "ايم بوت ⁴",
+	Name = "بلوكس فروت ²" [يدخلك سيرفر بي فواكه],
 	Callback = function()
-      		print("button pressed")_G.HeadSize = 50
-_G.Disabled = true
- 
-game:GetService('RunService').RenderStepped:connect(function()
-if _G.Disabled then
-for i,v in next, game:GetService('Players'):GetPlayers() do
-if v.Name ~= game:GetService('Players').LocalPlayer.Name then
-pcall(function()
-v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
-v.Character.HumanoidRootPart.Transparency = 0.7
-v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
-v.Character.HumanoidRootPart.Material = "Neon"
-v.Character.HumanoidRootPart.CanCollide = false
-end)
-end
-end
-end
-end)
+      		print("button pressed")loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/FruitFarmOp"))()
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "mm2",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = " mm2 ¹",
+	Callback = function()
+      		print("button pressed")loadstring(game:HttpGet("https://raw.githubusercontent.com/zxclua/m/main/script"))()
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "ماب البيوت",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "ماب البيوت ¹",
+	Callback = function()
+      		print("button pressed")loadstring (game: HttpGet ('https://icehub.cf/IceHubLoader')) ()
+﻿
   	end    
 })
