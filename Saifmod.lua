@@ -80,7 +80,7 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-	Name = "بلوكس فروت`",
+	Name = "بلوكس فروت",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -120,7 +120,7 @@ Tab:AddButton({
   	end    
 })
 Tab:AddButton({
-	Name = "ماب البيوت [icehub]",
+	Name = "ماب البيوت قوي",
 	Callback = function()
       		print("button pressed")loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Ice-Hub-6414"))()
   	end    
@@ -151,7 +151,7 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-	Name = " mm2",
+	Name = "mm2",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
