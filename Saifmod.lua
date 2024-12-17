@@ -12,7 +12,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 Tab:AddButton({
-	Name = كشف اماكن ¹!",
+	Name =" كشف اماكن ¹!",
 	Callback = function()
       		print("button pressed")loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
   	end    
