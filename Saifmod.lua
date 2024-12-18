@@ -59,11 +59,20 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 Tab:AddButton({
-	Name = "كينج ليجسي",
+	Name = "كينج ليجسي¹",
 	Callback = function()
       		print("button pressed")loadstring(game:HttpGet("https://raw.githubusercontent.com/ChopLoris/ArcHub/main/main.lua"))()
   	end    
 })
+Tab:AddButton({
+	Name = "كينج ليجسي²",
+	Callback = function()
+      		print("button pressed")
+getgenv().CustomDistance = 10 -- For Bug Can't Swipe Distance
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ChopLoris/ArcHub/main/main.lua"))()
+  	end    
+})
+
 local Tab = Window:MakeTab({
 	Name = "ماب البيوت",
 	Icon = "rbxassetid://4483345998",
@@ -73,6 +82,17 @@ Tab:AddButton({
 	Name = "ماب البيوت ¹",
 	Callback = function()
       		print("button pressed")loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Ice-Hub-6414"))()
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "tps street soccer",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "tps street soccer¹",
+	Callback = function()
+      		print("button pressed")loadstring(game:HttpGet("https://pastebin.com/raw/TBFtck2B"))()
   	end    
 })
 local Tab = Window:MakeTab({
@@ -86,6 +106,24 @@ Tab:AddButton({
       		print("button pressed")loadstring(game:HttpGet("https://scriptblox.com/raw/Blade-Ball-Auto-parry-and-more-8515"))()
   	end    
 })
+local Tab = Window:MakeTab({
+	Name = "gym league",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "gym league¹",
+	Callback = function()
+      		print("button pressed")loadstring(game:HttpGet("https://ryk.bloxteam.com/loader.lua"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "gym league²",
+	Callback = function()
+      		print("button pressed")loadstring(game:HttpGet("https://ryk.bloxteam.com/loader.lua"))()
+  	end    
+})
+
 local Tab = Window:MakeTab({
 	Name = "سكربتات اخرى",
 	Icon = "rbxassetid://4483345998",
