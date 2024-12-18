@@ -11,6 +11,12 @@ Tab:AddButton({
       		print("button pressed")loadstring(game:HttpGet("https://raw.githubusercontent.com/HomeMadeScripts/Camlock-aimlock/main/obf_Wxr6QgzF76G1y2Ch77KN4Zt5Nz0A6GIl61gitv3mRR2t3V103al5d0g26s4KY04r.lua.txt"))()
   	end    
 })
+Tab:AddButton({
+	Name = "ايم بوت ²",
+	Callback = function()
+      		print("button pressed")loadstring(game:HttpGet("https://raw.githubusercontent.com/Ndora1/Ndora1/main/DeepHub"))()
+  	end    
+})
 local Tab = Window:MakeTab({
 	Name = "كشف اماكن",
 	Icon = "rbxassetid://4483345998",
@@ -53,6 +59,23 @@ Tab:AddButton({
       		print("button pressed")loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
   	end    
 })
+Tab:AddButton({
+	Name = "بلوكس فروت ² ميراج",
+	Callback = function()
+      		print("button pressed")loadstring(game:HttpGet('https://raw.githubusercontent.com/REWzaKunGz1/premium/main/PadoHub'))()
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "Pet Simulator",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Pet Simulator ¹",
+	Callback = function()
+      		print("button pressed")loadstring(game:HttpGet("https://raw.githubusercontent.com/IdiotHub/Scripts/main/Pet%20Simulator%2099/Hub"))()
+  	end    
+})
 local Tab = Window:MakeTab({
 	Name = "كينج ليجسي",
 	Icon = "rbxassetid://4483345998",
@@ -82,6 +105,12 @@ Tab:AddButton({
 	Name = "ماب البيوت ¹",
 	Callback = function()
       		print("button pressed")loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Ice-Hub-6414"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "ماب البيوت ²",
+	Callback = function()
+      		print("button pressed")loadstring(game:HttpGet("https://raw.githubusercontent.com/VR7ss/OMK/main/VR7%20RAGDOLL"))()
   	end    
 })
 local Tab = Window:MakeTab({
@@ -142,4 +171,27 @@ Tab:AddButton({
       		print("button pressed")loadstring(game:HttpGet('https://raw.githubusercontent.com/Ndora1/Ndora1/main/Nokies'))()
   	end    
 })
-
+Tab:AddButton({
+	Name = "نسخ سكنات",
+	Callback = function()
+      		print("button pressed")loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "ادمن ¹",
+	Callback = function()
+      		print("button pressed")loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+Tab:AddButton({
+	Name = "ادمن ²",
+	Callback = function()
+      		print("button pressed")loadstring(game:HttpGet("https://raw.githubusercontent.com/FD2Team/Nameless-Admin-No-Byfron-Kick/main/Source",true))()
+  	end    
+})
+Tab:AddButton({
+	Name = "اختفاء",
+	Callback = function()
+      		print("button pressed")loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
+  	end    
+})
