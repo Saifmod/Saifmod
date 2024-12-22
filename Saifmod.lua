@@ -1,3 +1,4 @@
+--  غير مبري الذمه اي شي تسوي في السكربت
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "legends of speed", HidePremium = false, SaveConfig = true, ConfigFolder = "@ksjskawj"})
 local Tab = Window:MakeTab({
