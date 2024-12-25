@@ -2,7 +2,6 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Window = OrionLib:MakeWindow({Name = "سكنات ماب البيوت", HidePremium = false, SaveConfig = true, ConfigFolder = "@ksjskawj"})
 
 
-
 local Tab = Window:MakeTab({
 	Name = "قسم الشعر",
 	Icon = "rbxassetid://4483345998",
